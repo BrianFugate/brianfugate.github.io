@@ -1,5 +1,6 @@
 * {
     font-family: 'Bree Serif', serif;
+    color: black;
     background-color:ivory;
 }
 
@@ -46,7 +47,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:visited, nav a:link {
+nav a, nav a:visited {
     color:black;
 }
 
