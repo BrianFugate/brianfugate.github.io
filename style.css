@@ -1,0 +1,156 @@
+* {
+    font-family: 'Bree Serif', serif;
+    background-color:ivory;
+}
+
+body {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    max-width: 1024px;
+    margin: 0 1em;
+    justify-content: space-between;
+}
+
+header {
+    flex-basis: 59%;
+    order: 1;
+}
+
+nav {
+    flex-basis: 40%;
+    order: 2;
+    vertical-align: middle;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;  
+}
+
+nav li {
+    font-size: 1.25em;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:visited {
+    color:black;
+}
+
+#portrait {
+    order: 4;
+    flex-basis: 30%;
+    display: flex;
+}
+
+#portrait img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#about {
+    flex-basis: 69%;
+    order: 3;
+}
+
+#about p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+#about a {
+    width: 101.6px;
+    height: 21.71px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#about svg {
+    width: 101.6px;
+    height: 21.71px;
+    display: inline-block;
+}
+
+#projects {
+    flex-basis: 99%;
+    order: 5;
+}
+
+#skills {
+    flex-basis: 99%;
+    order: 6;
+}
+
+#skills ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skills li {
+    display: inline-block;
+    font-size: 5em;
+}
+
+@media screen and (max-width: 940px) {
+    nav li {
+        font-size: 1em;
+    }
+
+    #portrait img {
+        max-height: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header, nav, #about {
+        flex-basis: 99%;
+    }
+
+    header h1, h2 {
+        text-align: center;
+    }
+    
+    nav ul {
+        justify-content: space-around;
+    }
+
+    nav li {
+        font-size: 1em;
+    }
+
+    #portrait {
+        display: none;
+    }
+
+    #skills li {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #skills li {
+        font-size: 3em;
+    }
+}
