@@ -10,7 +10,8 @@ body {
     flex-wrap: wrap;
     gap: 1%;
     max-width: 1024px;
-    margin: 0 1em;
+    padding: 0 1em;
+    margin: auto;
     justify-content: space-between;
 }
 
