@@ -15,6 +15,14 @@ body {
     justify-content: space-between;
 }
 
+a {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
 header {
     flex-basis: 59%;
     order: 1;
@@ -50,6 +58,10 @@ nav a {
 
 nav a, nav a:visited {
     color:black;
+}
+
+nav a:hover {
+    color:red;
 }
 
 #portrait {
@@ -115,6 +127,26 @@ nav a, nav a:visited {
     font-size: 5em;
 }
 
+#contact {
+    order: 3;
+}
+
+#contact ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact li {
+    display: inline-block;
+    font-size: 5em;
+}
+
 @media screen and (max-width: 940px) {
     nav li {
         font-size: 1em;
@@ -148,6 +180,10 @@ nav a, nav a:visited {
 
     #skills li {
         font-size: 4em;
+    }
+
+    #contact ul {
+        justify-content: space-around;
     }
 }
 
