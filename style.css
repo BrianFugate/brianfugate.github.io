@@ -126,6 +126,11 @@ nav a, nav a:visited {
 }
 
 #skills li {
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.fa-brands {
     display: inline-block;
     font-size: 5em;
 }
@@ -204,7 +209,7 @@ nav a, nav a:visited {
         display: none;
     }
 
-    #skills li {
+    .fa-brands {
         font-size: 4em;
     }
 
@@ -214,7 +219,7 @@ nav a, nav a:visited {
 }
 
 @media screen and (max-width: 500px) {
-    #skills li {
+    .fa-brands {
         font-size: 3em;
     }
 }
