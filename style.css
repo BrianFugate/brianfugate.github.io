@@ -1,6 +1,16 @@
+/*********************************************************************************************
+// 
+// $Workfile: style.css $
+// $Author: Brian Fugate $ 
+// 
+// Codecademy Full-Stack Engineer Course
+// Building Interactive Websites Portfolio Project: Personal Portfolio Website
+//
+//*******************************************************************************************/
+
+/* Main document styling */
 * {
     font-family: 'Bree Serif', serif;
-    color: black;
     background-color:ivory;
 }
 
@@ -13,14 +23,6 @@ body {
     padding: 0 1em;
     margin: auto;
     justify-content: space-between;
-}
-
-a {
-    color: blue;
-}
-
-a:hover {
-    color: red;
 }
 
 header {
@@ -60,10 +62,6 @@ nav a, nav a:visited {
     color:black;
 }
 
-nav a:hover {
-    color:red;
-}
-
 #portrait {
     order: 4;
     flex-basis: 30%;
@@ -92,6 +90,7 @@ nav a:hover {
     height: 21.71px;
     display: inline-block;
     vertical-align: bottom;
+    color: black;
 }
 
 #about svg {
@@ -103,6 +102,10 @@ nav a:hover {
 #projects {
     flex-basis: 99%;
     order: 5;
+}
+
+#projects a {
+    color: blue;
 }
 
 #skills {
@@ -144,9 +147,32 @@ nav a:hover {
 
 #contact li {
     display: inline-block;
-    font-size: 5em;
 }
 
+#contact a {
+    font-size: 5em;
+    color: black;
+}
+
+/* Animation settings */
+.animation {
+    animation-duration: 0.2s;
+    animation-name: slidein;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 1%;
+    }
+  }
+
+/* Settings to make website responsive */
 @media screen and (max-width: 940px) {
     nav li {
         font-size: 1em;
